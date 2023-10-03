@@ -1,0 +1,29 @@
+<body style="background-image: url(../../assets/login.jpg); background-repeat: no-repeat;background-size: cover;">
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <mat-card style="width: 500px; height: 400px; background-color: transparent; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);">
+            <mat-card-header style="background-color: transparent; padding: 16px; border-radius: 10px 10px 0 0;">
+                <h1 style="color: rgb(255, 255, 255); padding-left: 140px; margin: 0; ">USER LOGIN</h1>
+            </mat-card-header>
+            <mat-card-content style="border-radius: 0 0 10px 10px; padding: 16px;">
+                <form class="example-form" [formGroup]="loginform" (ngSubmit)="proceedlogin()">
+                    <div>
+                        <mat-form-field class="example-full-width" style="margin-bottom: 16px;">
+                            <mat-label>User Name</mat-label>
+                            <input matInput formControlName="username" style="font-size: 18px; padding: 6px 12px;">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="example-full-width" style="margin-bottom: 16px;">
+                            <mat-label>Password</mat-label>
+                            <input type="password" matInput formControlName="password" style="font-size: 18px; padding: 6px 12px;">
+                        </mat-form-field>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 16px;">
+                        <button mat-raised-button style="margin-right: 16px;">Submit</button>
+                        <a routerLink="/register" mat-raised-button color="accent" style="border-color: aliceblue;color: #000000; border: 2px">New User</a>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</body>

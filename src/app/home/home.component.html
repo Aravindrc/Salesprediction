@@ -1,0 +1,26 @@
+<body style="background-image: url(../../assets/home1.jpeg); background-repeat: no-repeat;background-size: cover;">
+<div class="container">
+  <h1 class="rainbow-text">UPLOAD CSV FILE</h1>
+  <div class="card">
+    
+    <form>
+      <div class="form-group">
+        <label>File:</label>
+        <input type="file" (change)="onFileSelected($event)" accept=".csv" />
+      </div>
+      <div class="form-group">
+        <label>Periodicity:</label>
+        <select name="periodicity" [(ngModel)]="periodicity">
+          <option value="D">Daily</option>
+          <option value="W">Weekly</option>
+          <option value="M">Monthly</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Periodicity Number:</label>
+        <input type="number" name="periodicity_number" [(ngModel)]="periodicityNumber">
+      </div>
+      <button class="submit-btn" (click)="submitForm()">Submit</button>
+    </form>
+  </div>
+</div>

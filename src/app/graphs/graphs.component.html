@@ -1,0 +1,30 @@
+<body style="background-image: url(../../assets/login.jpg); background-repeat: no-repeat;background-size: cover;">
+  <div class="card">
+    <div class="image-container">
+      <h2>Actual Image</h2>
+      <img [src]="actualImage" alt="Actual Image">
+    </div>
+  </div>
+<br>
+  <div class="card">
+    <div class="image-container">
+      <h2>Forecast Image</h2>
+      <img [src]="forecastImage" alt="Forecast Image">
+    </div>
+  </div>
+<br>
+  <div class="card">
+    <div class="image-container">
+      <h2>Training Image</h2>
+      <img [src]="trainingImage" alt="Training Image">
+    </div>
+  </div>
+<br>
+<br>
+<div style="text-align: center;">
+  <button mat-raised-button color="transparent" (click)="openPowerBI()">Open Power BI</button>
+</div>
+<br>
+<br>
+
+</body>

@@ -1,0 +1,13 @@
+{
+  "user": [
+    {
+      "id": "Apsar",
+      "name": "SHAIK.APSAR",
+      "password": "Apsar@26",
+      "email": "apsarshaik2629@gmail.com",
+      "gender": "female",
+      "role": "admin",
+      "isactive": true
+    }
+  ]
+}

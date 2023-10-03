@@ -1,0 +1,14 @@
+{
+  "user": [
+  
+    {
+      "id": "Aravind",
+      "name": "Aravind",
+      "password": "Aravind@2003",
+      "email": "Aravind@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    }
+  ]
+}
